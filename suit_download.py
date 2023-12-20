@@ -1,6 +1,6 @@
 from downloader import *
 
-# 装扮的id
+# 装扮id
 #id = 114514
 #输入装扮的id
 id = input('装扮id：')
@@ -16,5 +16,7 @@ title = info['data']['name']
 suit_create_dir(title)
 
 save_json(title, info_url)
+
 download_bg(title, info)
+
 download_emoji(title, info)
