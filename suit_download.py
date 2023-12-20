@@ -1,22 +1,29 @@
 from downloader import *
 
-# 装扮id
-#id = 114514
-#输入装扮的id
-id = input('装扮id：')
+while(True):
+    # 装扮id
+    #id = 114514
+    #输入装扮的id
+    print('输入0退出')
+    id = input('装扮id：')
+    
+    if id == '0':
+        exit()
 
-info_url = 'https://api.bilibili.com/x/garb/v2/mall/suit/detail?from=&from_id=&item_id=' + \
-    str(id)
+    info_url = 'https://api.bilibili.com/x/garb/v2/mall/suit/detail?from=&from_id=&item_id=' + \
+        str(id)
 
-info = parse(get_json(info_url))
-suit_if_exist(info)
+    info = parse(get_json(info_url))
+    
+    if suit_if_exist(info)==False:
+        continue
 
-title = info['data']['name']
+    title = info['data']['name']
 
-suit_create_dir(title)
+    suit_create_dir(title)
 
-save_json(title, info_url)
+    save_json(title, info_url)
 
-download_bg(title, info)
+    download_bg(title, info)
 
-download_emoji(title, info)
+    download_emoji(title, info)

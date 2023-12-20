@@ -38,13 +38,17 @@ def suit_if_exist(info):
     if info['data']['suit_items'] == None:
         print('装扮不存在')
         #终止程序
-        exit()
+        #exit()
+        return False
+        
 
 def card_if_exist(info):
     if info['message'] != '0':
         print('活动不存在')
         #终止程序
-        exit()
+        #exit()
+        return False
+        
 
 
 def download_card(title,item):
