@@ -1,8 +1,25 @@
-## API
+## bili-suit-card-downloader
+
+通过b站的api接口，实现装扮和收藏集的下载。
+
+### 查找
+
+运行search.py，输入关键字，可查找装扮/收藏集的商品id。
+
+对于收藏集，也可在card_list.json中搜索名称，直接查找act_id。
+
+运行update_card_list更新card_list.json列表。
+
+### 下载装扮
+
+下载装扮：运行suit_download.py并输入商品id下载。
+
+下载装扮：运行card_download.py并输入商品id下载。
+
+### API
+
 + 收藏集目录
 https://api.bilibili.com/x/garb/card/subject/list?subject_id=42
-
-https://api.bilibili.com/x/garb/suit/subject/list?subject_id=42
 
 + 收藏集数据
 https://api.bilibili.com/x/vas/dlc_act/act/item/list?act_id=161
