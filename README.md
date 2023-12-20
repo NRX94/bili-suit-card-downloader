@@ -4,17 +4,17 @@
 
 ### 查找
 
-运行`search.py`，输入关键字，可查找装扮/收藏集的商品id。
+运行`search.exe`，输入关键字，可查找装扮/收藏集的商品id。
 
 对于收藏集，也可在`card_list.json`中搜索名称，直接查找`act_id`。
 
-运行`update_card_list.py`更新`card_list.json`列表。
+运行`update_card_list.exe`更新`card_list.json`列表。
 
 ### 下载装扮
 
-下载装扮：运行`suit_download.py`并输入商品id下载。
+下载装扮：运行`suit_download.exe`并输入商品id下载。
 
-下载装扮：运行`card_download.py`并输入商品id下载。
+下载装扮：运行`card_download.exe`并输入商品id下载。
 
 ### API
 
